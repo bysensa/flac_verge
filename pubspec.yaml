@@ -1,0 +1,15 @@
+name: verge
+description: Port of Verge state mmanagement library
+version: 0.0.1
+homepage:
+
+environment:
+  sdk: ">=2.15.1 <3.0.0"
+
+dependencies:
+  synchronized: 3.0.0
+  bloc: 8.0.2
+  fast_immutable_collections: 7.2.0
+
+dev_dependencies:
+  test: any
