@@ -1,0 +1,29 @@
+PODS:
+  - FlatBuffers (2.0.0)
+  - FlutterMacOS (1.0.0)
+  - trec_macos_api (0.0.1):
+    - FlatBuffers
+    - FlutterMacOS
+
+DEPENDENCIES:
+  - FlutterMacOS (from `Flutter/ephemeral`)
+  - trec_macos_api (from `Flutter/ephemeral/.symlinks/plugins/trec_macos_api/macos`)
+
+SPEC REPOS:
+  trunk:
+    - FlatBuffers
+
+EXTERNAL SOURCES:
+  FlutterMacOS:
+    :path: Flutter/ephemeral
+  trec_macos_api:
+    :path: Flutter/ephemeral/.symlinks/plugins/trec_macos_api/macos
+
+SPEC CHECKSUMS:
+  FlatBuffers: 37dcab84f6e0025e42b6f8e9436279fa71595318
+  FlutterMacOS: 57701585bf7de1b3fc2bb61f6378d73bbdea8424
+  trec_macos_api: 32a61762b62815ce148456b37d14520c42223274
+
+PODFILE CHECKSUM: 0d3963a09fc94f580682bd88480486da345dc3f0
+
+COCOAPODS: 1.11.2
