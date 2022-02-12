@@ -1,5 +1,6 @@
 import Cocoa
 import FlutterMacOS
+import Combine
 
 @NSApplicationMain
 class AppDelegate: FlutterAppDelegate {
