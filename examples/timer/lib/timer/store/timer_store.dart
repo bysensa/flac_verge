@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'dart:io';
 
 import 'package:verge/verge.dart';
 
@@ -7,15 +8,22 @@ import '../ticker.dart';
 class TimerStore extends Store<TimerState> {
   final Ticker _ticker;
   StreamSubscription<int>? _tickerSubscription;
+  StreamSubscription<FileSystemEvent>? _fileWatchSubscription;
 
   TimerStore({
     required Ticker ticker,
   })  : _ticker = ticker,
-        super(TimerState());
+        super(TimerState()) {
+    _fileWatchSubscription = File(
+            '/Users/s-a-sen/Development/sandbox/verge/examples/timer/README.md')
+        .watch()
+        .listen(print);
+  }
 
   @override
   Future<void> close() {
     _tickerSubscription?.cancel();
+    _fileWatchSubscription?.cancel();
     return super.close();
   }
 
