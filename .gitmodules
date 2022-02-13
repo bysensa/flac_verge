@@ -1,0 +1,3 @@
+[submodule "examples/trec/packages/flac"]
+	path = examples/trec/packages/flac
+	url = https://github.com/bysensa/flac.git

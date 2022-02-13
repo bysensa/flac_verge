@@ -10,6 +10,7 @@ dependencies:
   synchronized: 3.0.0
   bloc: 8.0.2
   fast_immutable_collections: 7.2.0
+  deep_pick: ^0.10.0
 
 dev_dependencies:
   test: any

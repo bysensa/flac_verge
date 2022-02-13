@@ -33,10 +33,16 @@ dependencies:
     path: ../../
   trec_macos_api:
     path: packages/trec_macos_api
+  flac:
+    path: packages/flac
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.4
+  freezed_annotation: ^1.1.0
+  json_annotation: ^4.4.0
+  deep_pick: ^0.10.0
+
 
 
 dev_dependencies:
@@ -49,6 +55,9 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^1.0.0
+  build_runner: ^2.1.7
+  freezed: ^1.1.1
+  json_serializable: ^6.1.4
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

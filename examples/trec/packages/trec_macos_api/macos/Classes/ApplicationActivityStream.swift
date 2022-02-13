@@ -15,7 +15,11 @@ final class ApplicationActivityStream: NSObject, FlutterStreamHandler {
 
     private var sink: FlutterEventSink?
     private var subscriptions: Set<AnyCancellable> = Set()
-    private var encode = JSONEncoder()
+    private var encode: JSONEncoder = {
+        let encoder = JSONEncoder()
+        encoder.dateEncodingStrategy = .iso8601
+        return encoder
+    }()
 
     func onListen(withArguments arguments: Any?, eventSink events: @escaping FlutterEventSink) -> FlutterError? {
         self.sink = events
